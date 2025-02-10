@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Character {
+  id          String   @id @default(cuid())
+  name        String
+  species     String?
+  occupation  String?
+  residence   String?
+  imageUrl    String?
+  wikiUrl     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
