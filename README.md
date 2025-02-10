@@ -43,6 +43,15 @@ CodeYourDreams Starter Project!!
     ├── lib/                 # Utility functions and configurations
     └── types/              # TypeScript type definitions
 ```
+
+## Useful Commands
+
+```
+npx prisma studio
+npx prisma generate
+npx prisma db push
+npm run dev
+```
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/) - React framework
