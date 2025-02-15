@@ -2,6 +2,7 @@
 
 import { Center, Image, VStack } from "@chakra-ui/react";
 import type { ReactNode } from "react";
+import AddCharcterModal from "./characters/AddCharacterModal";
 
 interface HomeProps {
   children?: ReactNode;
@@ -26,8 +27,10 @@ const HomePage: React.FC<HomeProps> = ({ children }) => {
           src="/spongebob-png-title-logo-1.png"
           alt="Spongebob Logo"
         />
+        <AddCharcterModal />
+
       </VStack>
-    </Center>
+    </Center >
   );
 };
 
